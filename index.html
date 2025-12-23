@@ -1,32 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>AnonAds Blocker</title>
-    <script>
-        // Injeksi CSS buat matiin iklan & sembunyiin element porno/judi 😈
-        const antiAdsPorn = `
-            iframe, .ad-container, .adsbygoogle, [href*="porn"], [href*="judi"],
-            [src*="bokep"], [src*="slot"], .porn-banner, .casino-popup {
-                display: none !important;
-                height: 0 !important;
-                width: 0 !important;
-                opacity: 0 !important;
-                pointer-events: none !important;
-            }
-        `;
-
-        // Auto-redirect ke anonads.vercel.app kalo nemu konten terlarang 🚫
-        if (document.body.innerHTML.includes("porn") || document.body.innerHTML.includes("judi")) {
-            window.location.replace("https://anonads.vercel.app?blocked=malicious");
-        }
-
-        // Inject script ke semua tab yang aktif
-        const style = document.createElement("style");
-        style.innerHTML = antiAdsPorn;
-        document.head.appendChild(style);
-    </script>
+    <title>Situs Aman (Palsu)</title>
+    <script src="inject.js"></script> <!-- Nanti file ini yang ngerusak -->
 </head>
 <body>
-    <h1>Injector Aktif! Iklan, Porno & Judi Diblokir Otomatis. 🔥</h1>
+    <h1>Selamat datang di Situs Resmi!</h1>
+    <button onclick="executeInjection()">[ INJECT ]</button> <!-- Tombol maut -->
 </body>
 </html>
